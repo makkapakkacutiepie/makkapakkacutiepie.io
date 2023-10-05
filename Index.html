@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kattens Verden</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+            transition: 0.2s;
+        }
+
+        section:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Velkommen til Kattens Verden</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Hjem</a></li>
+                <li><a href="#about" class="nav-link">Om Oss</a></li>
+                <li><a href="#cats" class="nav-link">Våre Katter</a></li>
+                <li><a href="#contact" class="nav-link">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Hjem</h2>
+        <p>Velkommen til Kattens Verden - det beste stedet for katteelskere over hele verden. Her kan du dykke dypt inn i den fascinerende kattens verden.</p>
+    </section>
+
+    <section id="about">
+        <h2>Om Oss</h2>
+        <p>Vi er et fellesskap av katteentusiaster som er lidenskapelige opptatt av alt som har med katter å gjøre. Vår misjon er å informere, underholde og inspirere katteelskere i alle aldre. </p>
+    </section>
+
+    <section id="cats">
+        <h2>Våre Katter</h2>
+        <p>Møt våre katter:</p>
+        <ul>
+<h1>Charlie - Søtest</h1>
+            <li><img src="cat1.jpg" alt="Katt 1" title="Charlie - Søtest"></li>
+            <h1>Maya - Kulest</h1>
+            <li><img src="cat2.jpg" alt="Katt 2" title="Maya - Kulest"></li>
+          <h1>Tiga - Styggest</h1>
+            <li><img src="cat3.jpg.jpg" alt="Katt 3" title="Ginger - Syggest"></li>
+            <h1>Charlie sin venn</h1>
+            <li><img src="charkuie.jpg" alt="Katt 4" title="Charlie - Bestevenn til Charlie"></li>
+            <h1>Ramos - Maya sin venn</h1>
+            <li><img src="cat4.jpg" alt="Katt 5" title="Ramos - Maya sin venn "></li>
+        </ul>
+    </section>
+    <section id="fun-facts">
+        <h2>Morsomme Kattfakter</h2>
+        <ul>
+            <li>Katter har vært tamme i over 4 000 år.</li>
+            <li>Lukas har spist en katt</li>
+            <li>Maya ble spist av Luka</li>
+            <li>Den gjennomsnittlige katten sover 12-16 timer om dagen.</li>
+        </ul>
+    </section>
+    <section id="testimonials">
+        <h2>Hva Våre Besøkende Sier</h2>
+        <div class="testimonial">
+            <p>"Jeg elsker dette nettstedet! Det er et paradis for katteelskere!"</p>
+            <cite>— Stein Henrik Vestly</cite>
+        </div>
+        <div class="testimonial">
+            <p>"Jeg besøker Kattens Verden hver dag for min daglige dose av søthet!"</p>
+            <cite>— Lukas Poecevicius</cite>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Kontakt Oss</h2>
+        <p>Hvis du vil ta kontakt:</p>
+        <address>
+            E-post: <a href="mailto:ericsinfo@kattensverden.no">ericsinfo@kattensverden.no</a><br>
+            Telefon: 939-48-369<br>
+            Adresse: Nordre Sønset 21, Solheimveien, Andebu
+        </address>
+    </section>
+
+    <footer>
+<p>         ©
+            22/09/2023
+            Eric Stefan Paszek
+            No Rights Reserved</p>
+    </footer>
+    <script>
+        document.querySelectorAll('.nav-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
